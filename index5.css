@@ -1,0 +1,296 @@
+body{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Bangers', cursive;                                                                                                                                                
+   background-color: black;
+     top: 0;
+    left: 0; 
+    overflow-x: hidden; 
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    margin: auto;
+    padding: 30px;
+    border-collapse: separate;
+    border-spacing: 12px;
+}
+#timee , #moves{
+    padding: 0 50px 10px 50px;
+
+}
+#timenmoves{
+    display: flex;
+    padding: 20px 10px 0 10px;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+.timebox , .movebox{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    border: 0px solid black;
+    border-radius: 20px;
+    width: 35%;
+    margin: 0px 18px; 
+     background-color: rgba(54, 50, 50, 0.705); 
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+} 
+.timetitle , .movetitle{
+    padding-top: 10px;
+}
+
+td{
+    height:85px;
+    width: 85px;
+    cursor: pointer; 
+    border: 8px solid transparent; 
+    border-radius: 30%;
+    background-color: brown;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 5px;
+    font-size: 200%;
+    font-weight: 1000;
+}
+.button{
+    background-color: cadetblue;
+    font-size: 200%;
+    font-weight: bolder;
+    outline: none;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    padding:8px 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+    opacity: .8;
+    text-align: center;
+    color: #fff;
+}
+.button:hover{
+    opacity: 1;
+}
+.button:active{
+    transform: scale(.9);
+}
+.tile1:hover, .tile2:hover, .tile3:hover, .tile4:hover, .tile5:hover,.tile6:hover,.tile7:hover,.tile8:hover,.tile9:hover,
+.tile10:hover,.tile11:hover,.tile12:hover,.tile13:hover,.tile14:hover,.tile15:hover,.tile16:hover,.tile17:hover,.tile18:hover,.tile19:hover
+,.tile20:hover,.tile21:hover,.tile22:hover,.tile23:hover,.tile24:hover{
+    transform: scale(1.1);
+    transition-duration: .4s;
+}
+.tile1::after, .tile2::after, .tile3::after, .tile4::after, .tile5::after,.tile6::after,.tile7::after,.tile8::after,.tile9::after,
+ .tile10::after,.tile11::after,.tile12::after,.tile13::after,.tile14::after,.tile15::after,.tile16::after,.tile17:after,.tile18::after
+ ,.tile19::after,.tile20::after,.tile21::after,.tile22::after,.tile23::after,.tile24::after{  
+    font-size: 150%;
+    margin: 45px;
+    color: #fff;
+}
+
+.tile25{
+    cursor: default;
+    background-color: white;
+}
+.tile1::after { 
+    content: "1";
+ 
+}
+.tile2::after { 
+    content: "2";
+
+}
+.tile3::after { 
+    content: "3";
+
+}
+.tile4::after { 
+    content: "4";
+
+}
+.tile5::after { 
+    content: "5";
+
+} 
+.tile6::after { 
+    content: "6";
+}
+.tile7::after { 
+    content: "7";
+
+}
+.tile8::after { 
+    content: "8";
+
+}
+.tile9::after { 
+    content: "9";
+
+}
+.tile10::after { 
+    content: "10";
+
+}
+.tile11::after { 
+    content: "11";
+
+}
+.tile12::after { 
+    content: "12";
+
+}
+.tile13::after { 
+    content: "13";
+
+    
+}
+.tile14::after { 
+    content: "14";
+
+}
+
+.tile15::after { 
+    content: "15";
+}
+
+.tile16::after { 
+    content: "16";
+}
+.tile17::after { 
+    content: "17";
+}
+.tile18::after { 
+    content: "18";
+}
+.tile19::after { 
+    content: "19";
+}
+.tile20::after { 
+    content: "20";
+}
+.tile21::after { 
+    content: "21";
+}
+.tile22::after { 
+    content: "22";
+}
+.tile23::after { 
+    content: "23";
+}
+.tile24::after { 
+    content: "24";
+}
+
+#level{
+    font-size: 150%;
+    text-align: center;
+    padding: 20px 0 0 0;
+    color: #fff;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+
+}
+#win{
+width: 10%;
+margin: auto;
+font-size: 200%;
+animation-name: won;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+
+@keyframes won {
+    0%{
+        color: white;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+}
+.puzzle-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option1, .option2 , .option3 {
+    background-color:  #e1ba0fa6;
+    padding: 10px;
+    width: 12%;
+    text-align: center;
+    margin: 10px 15px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Bangers', cursive;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+   
+}
+.option1:hover, .option2:hover, .option3:hover{
+    text-decoration: underline;
+}
+.option1:focus, .option2:focus, .option3:focus{
+    text-decoration: underline;
+    background-color: #e1ba0ffa;
+}
+.option1:active, .option2:active, .option3:active{
+ transform: scale(.9);
+}
+.scorebox{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 20px;
+    right: 20px;
+    color: red;
+    font-size: 20px;
+    width: 180px
+
+}
+.scorebox > button{
+    outline: none;
+    border: 2px solid rgba(30, 19, 189, 0.623);
+    border-radius: 20px;
+    background-color: #ed6b07ad;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Bangers', cursive;
+    font-size: inherit;                
+}
+.scorebox > button:hover{
+border-color:  rgb(30, 19, 189);;
+background-color: #ed6a07;
+}
+.scorebox > button:active{
+    transform: scale(.9);
+}
+#highScore,#noneScore{
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#highScore li {
+    list-style-type: decimal;
+}

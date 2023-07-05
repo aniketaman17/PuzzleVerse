@@ -1,0 +1,52 @@
+body{ 
+    background-color: black;
+    background-image: none; 
+    background-size: cover;
+    background-repeat: unset; 
+    width: fit-content;
+    margin-top: 20%;
+}
+.button{
+    font-size: 250%;
+    margin-bottom: 4%;
+    color: white;
+}
+.tile1::after, .tile2::after, .tile3::after, .tile4::after, .tile5::after,.tile6::after,.tile7::after,.tile8::after,.tile9::after,
+ .tile10::after,.tile11::after,.tile12::after,.tile13::after,.tile14::after,.tile15::after{
+     color: #fff;
+ }
+#level{
+    font-size: 200%;
+    color: white;
+}
+.puzzle-option{
+    justify-content: space-evenly;
+}
+.option1, .option2, .option3{
+    width: 15%;
+    background-color: #e1bb0f;
+}
+.scorebox {
+    position: relative;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 30px;
+    width: fit-content;
+    width: fit-content;
+    left: inherit
+}
+#win{
+    width: 16%;
+}
+.scorebox > button{
+ height: fit-content;
+ width: fit-content;
+ padding: 10px 15px;
+ font-size: larger;
+ background-color: #ed6a07;
+ }
+ #highScore{
+     width: fit-content;
+     padding: 15px 70px;
+     font-size: larger;
+ }
